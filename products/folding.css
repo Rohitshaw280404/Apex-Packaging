@@ -13,7 +13,7 @@ body{
 /* ================= HERO ================= */
 
 .hero{
-  background:url('https://images.unsplash.com/photo-1607082349566-187342175e2f') center/cover no-repeat;
+  background:#0a355c;
   height:420px;
   display:flex;
   align-items:center;
@@ -25,7 +25,7 @@ body{
 
 .hero-overlay{
   background:rgba(10,53,92,0.75);
-  padding:60px 20px;
+  padding:80px 20px;
   width:100%;
 }
 
@@ -41,15 +41,15 @@ body{
 /* ================= ABOUT ================= */
 
 .about{
-  padding:80px 60px;
+  padding:90px 60px;
 }
 
-.about-container{
-  display:flex;
-  align-items:center;
-  gap:60px;
+.container{
   max-width:1200px;
   margin:auto;
+  display:flex;
+  align-items:center;
+  gap:70px;
 }
 
 .about-text{
@@ -57,14 +57,14 @@ body{
 }
 
 .about-text h2{
-  font-size:32px;
+  font-size:34px;
   margin-bottom:20px;
   color:#0a355c;
 }
 
 .about-text p{
-  line-height:1.7;
   font-size:17px;
+  line-height:1.7;
   margin-bottom:18px;
 }
 
@@ -75,18 +75,18 @@ body{
 .about-image img{
   width:100%;
   border-radius:14px;
-  box-shadow:0 10px 25px rgba(0,0,0,.15);
+  box-shadow:0 12px 30px rgba(0,0,0,.15);
 }
 
-/* ================= GRID ================= */
+/* ================= FEATURES ================= */
 
-.content{
+.features{
   padding:80px 60px 100px;
-  text-align:center;
   background:#f4f7fb;
+  text-align:center;
 }
 
-.content h2{
+.features h2{
   font-size:32px;
   margin-bottom:50px;
   color:#0a355c;
@@ -109,7 +109,7 @@ body{
 
 .card img{
   width:100%;
-  height:180px;
+  height:200px;
   object-fit:cover;
 }
 
@@ -150,7 +150,7 @@ body{
 
 @media(max-width:992px){
 
-  .about-container{
+  .container{
     flex-direction:column;
     text-align:center;
   }
@@ -174,7 +174,7 @@ body{
     padding:60px 30px;
   }
 
-  .content{
+  .features{
     padding:60px 30px 80px;
   }
 }
