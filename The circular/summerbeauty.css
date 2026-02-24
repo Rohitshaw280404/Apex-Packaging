@@ -105,9 +105,12 @@ nav a:hover {
 }
 
 .article img.small-image {
-    width: min(420px, 100%);
+    width: 100%;
+    max-height: 460px;
+    object-fit: cover;
+    object-position: center;
     display: block;
-    margin: 20px auto;
+    margin: 20px 0;
 }
 
 /* FOOTER */
