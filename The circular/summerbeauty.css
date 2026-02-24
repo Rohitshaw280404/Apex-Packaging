@@ -104,6 +104,12 @@ nav a:hover {
     border-radius: 8px;
 }
 
+.article img.small-image {
+    width: min(420px, 100%);
+    display: block;
+    margin: 20px auto;
+}
+
 /* FOOTER */
 .footer {
     background: #111;
