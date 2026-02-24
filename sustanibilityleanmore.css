@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.8;
+  color: #1f2937;
+  background: #ffffff;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb, #3b82f6);
+  color: #fff;
+  padding: 140px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+/* GENERAL SECTION */
+.section {
+  padding: 100px 10%;
+}
+
+/* Alternating backgrounds */
+.section:nth-child(even) {
+  background: #f8fafc;
+}
+
+/* Narrow centered */
+.section.narrow {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Light gray section */
+.section.gray {
+  background: linear-gradient(to bottom, #f9fafb, #f1f5f9);
+}
+
+/* HEADINGS */
+h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+/* SPLIT LAYOUT */
+.split {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.split.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 2;
+}
+
+.text p {
+  margin-bottom: 18px;
+  color: #374151;
+}
+
+/* TEXT BLOCK (REPLACES IMAGE) */
+.block {
+  flex: 1;
+  background: linear-gradient(145deg, #eff6ff, #dbeafe);
+  padding: 40px;
+  border-radius: 14px;
+  font-weight: 500;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  border-left: 6px solid #2563eb;
+  transition: transform 0.3s ease;
+}
+
+.block:hover {
+  transform: translateY(-5px);
+}
+
+/* INTRO EMPHASIS */
+.section.narrow p {
+  font-size: 17px;
+  color: #374151;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #1e3a8a, #2563eb);
+}
+
+.btn {
+  background: #ffffff;
+  color: #1e3a8a;
+  padding: 16px 36px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #e0e7ff;
+}
+
+/* DIVIDER LINE (optional visual polish) */
+.section::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #2563eb;
+  margin: 40px auto 0;
+  border-radius: 2px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .split {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+}
