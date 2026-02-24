@@ -6,17 +6,113 @@
   <title>Company Overview</title>
   <link rel="stylesheet" href="companyoverview.css">
 </head>
+
 <body>
-<section class="hero">
+
+<!-- Skip Link for Accessibility -->
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- HEADER -->
+<header>
+  <h2>Apex Packaging</h2>
+
+  <nav aria-label="Main Navigation">
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <button onclick="toggleTheme()" aria-label="Toggle dark mode">
+    🌙
+  </button>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" role="banner">
   <h1>Company Overview</h1>
   <p>Global partner for sustainable, performance-driven packaging.</p>
 </section>
-<section class="content">
-  <p>Apex Packaging delivers paper-based and hybrid packaging solutions for food, beverage, retail, healthcare, and industrial markets.</p>
-  <p>Our teams work across design, materials science, automation, and supply chain planning to help customers launch faster and scale reliably.</p>
-  <div class="leader"><h3>What We Do</h3><p>Design, manufacture, and optimize protective and branded packaging for high-volume supply chains.</p></div>
-  <div class="leader"><h3>Industries We Serve</h3><p>Food and beverage, personal care, e-commerce, healthcare, pharmaceuticals, and durable goods.</p></div>
-  <div class="leader"><h3>Our Scale</h3><p>40+ countries supported with integrated design-to-delivery workflows.</p></div>
-</section>
+
+<!-- MAIN CONTENT -->
+<main id="main" class="content">
+
+  <p>
+    Apex Packaging delivers paper-based and hybrid packaging solutions for food, beverage, retail, healthcare, and industrial markets.
+  </p>
+
+  <p>
+    Our teams work across design, materials science, automation, and supply chain planning to help customers launch faster and scale reliably.
+  </p>
+
+  <!-- CARDS -->
+  <div class="grid">
+
+    <div class="card" tabindex="0">
+      <h3>What We Do</h3>
+      <p>
+        Design, manufacture, and optimize protective and branded packaging for high-volume supply chains.
+      </p>
+    </div>
+
+    <div class="card" tabindex="0">
+      <h3>Industries We Serve</h3>
+      <p>
+        Food and beverage, personal care, e-commerce, healthcare, pharmaceuticals, and durable goods.
+      </p>
+    </div>
+
+    <div class="card" tabindex="0">
+      <h3>Our Scale</h3>
+      <p>
+        40+ countries supported with integrated design-to-delivery workflows.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- STATS -->
+  <div class="stats" aria-label="Company statistics">
+
+    <div class="stat">
+      <h2>40+</h2>
+      <p>Countries</p>
+    </div>
+
+    <div class="stat">
+      <h2>500+</h2>
+      <p>Clients</p>
+    </div>
+
+    <div class="stat">
+      <h2>10K+</h2>
+      <p>Projects Delivered</p>
+    </div>
+
+  </div>
+
+  <!-- CALL TO ACTION -->
+  <div class="cta">
+    <h3>Want to work with us?</h3>
+    <button onclick="showMessage()">Get in Touch</button>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Apex Packaging. All rights reserved.</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark");
+  }
+
+  function showMessage() {
+    alert("Contact form coming soon!");
+  }
+</script>
+
 </body>
 </html>
