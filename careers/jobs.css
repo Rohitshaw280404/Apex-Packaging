@@ -1,3 +1,25 @@
-body{margin:0;font-family:Segoe UI,sans-serif}
+body{margin:0;font-family:Segoe UI,sans-serif;color:#1f2937;background:#ffffff}
 .hero{background:#065f46;color:#fff;text-align:center;padding:100px 20px}
-.content{padding:80px 60px;text-align:center}
+.content{padding:80px 60px 30px;text-align:center}
+.content h2{margin-bottom:10px}
+.content > p{max-width:900px;margin:0 auto 20px;color:#4b5563}
+.job{background:#eef4fa;padding:24px;border-radius:10px;margin:24px 0;text-align:left}
+
+.apply-section{padding:20px 60px 80px;max-width:1000px;margin:0 auto}
+.apply-section h2{color:#065f46;margin-bottom:10px}
+.apply-section p{margin:0 0 24px;color:#4b5563}
+
+.apply-form{background:#f3fbf8;border:1px solid #cbe8dc;border-radius:12px;padding:24px}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+
+.apply-form label{display:flex;flex-direction:column;gap:8px;font-weight:600;color:#065f46;margin-bottom:16px}
+.apply-form input,.apply-form select,.apply-form textarea{font:inherit;padding:12px;border:1px solid #b7d9ca;border-radius:8px;background:#fff}
+.apply-form textarea{resize:vertical}
+
+.apply-form button{background:#065f46;color:#fff;border:none;padding:12px 20px;border-radius:999px;font-weight:600;cursor:pointer}
+.apply-form button:hover{background:#054a37}
+
+@media (max-width:768px){
+  .content,.apply-section{padding:50px 20px}
+  .form-grid{grid-template-columns:1fr}
+}

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,11 +11,59 @@
   <h1>Open Positions</h1>
   <p>Explore roles across engineering, operations, and business functions.</p>
 </section>
+
 <section class="content">
   <div class="job"><h3>Packaging Engineer</h3><p><strong>Location:</strong> Mumbai | <strong>Type:</strong> Full-Time</p><p>Design and validate packaging systems for performance, cost, and sustainability targets.</p></div>
   <div class="job"><h3>Supply Chain Analyst</h3><p><strong>Location:</strong> Bangalore | <strong>Type:</strong> Full-Time</p><p>Develop planning insights and optimize inventory flow.</p></div>
   <div class="job"><h3>Production Manager</h3><p><strong>Location:</strong> Pune | <strong>Type:</strong> Full-Time</p><p>Lead plant teams to improve throughput, quality, and on-time delivery.</p></div>
   <div class="job"><h3>Automation Service Specialist</h3><p><strong>Location:</strong> Hyderabad | <strong>Type:</strong> Full-Time</p><p>Support commissioning and line optimization for customer facilities.</p></div>
+</section>
+
+<section class="apply-section">
+  <h2>Apply for an Open Position</h2>
+  <p>Fill out the form below and our hiring team will contact you.</p>
+
+  <form class="apply-form" action="#" method="post" enctype="multipart/form-data">
+    <div class="form-grid">
+      <label>
+        Full Name
+        <input type="text" name="full_name" required>
+      </label>
+
+      <label>
+        Email Address
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Phone Number
+        <input type="tel" name="phone" required>
+      </label>
+
+      <label>
+        Position
+        <select name="position" required>
+          <option value="">Select position</option>
+          <option>Packaging Engineer</option>
+          <option>Supply Chain Analyst</option>
+          <option>Production Manager</option>
+          <option>Automation Service Specialist</option>
+        </select>
+      </label>
+    </div>
+
+    <label>
+      Resume (PDF/DOC)
+      <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+    </label>
+
+    <label>
+      Cover Letter / Notes
+      <textarea name="message" rows="5" placeholder="Tell us about your experience and why you are a fit."></textarea>
+    </label>
+
+    <button type="submit">Submit Application</button>
+  </form>
 </section>
 </body>
 </html>

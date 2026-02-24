@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,12 +11,59 @@
   <h1>Students and Internships</h1>
   <p>Launch your career with practical projects and expert mentorship.</p>
 </section>
+
 <section class="content">
   <h2>Internship Tracks</h2>
   <p>Programs are designed for final-year students and recent graduates interested in packaging, operations, and analytics.</p>
-  <div class="job" style="background:#eef4fa;padding:24px;border-radius:10px;margin:24px 0;text-align:left;"><h3>Engineering Internship</h3><p>Work on structural design, material testing, and performance validation.</p></div>
-  <div class="job" style="background:#eef4fa;padding:24px;border-radius:10px;margin:24px 0;text-align:left;"><h3>Operations Internship</h3><p>Support process improvement initiatives in manufacturing and quality systems.</p></div>
-  <div class="job" style="background:#eef4fa;padding:24px;border-radius:10px;margin:24px 0;text-align:left;"><h3>Business and Analytics Internship</h3><p>Contribute to reporting automation and market analysis.</p></div>
+  <div class="job"><h3>Engineering Internship</h3><p>Work on structural design, material testing, and performance validation.</p></div>
+  <div class="job"><h3>Operations Internship</h3><p>Support process improvement initiatives in manufacturing and quality systems.</p></div>
+  <div class="job"><h3>Business and Analytics Internship</h3><p>Contribute to reporting automation and market analysis.</p></div>
+</section>
+
+<section class="apply-section">
+  <h2>Apply for Internship</h2>
+  <p>Share your details and preferred internship track.</p>
+
+  <form class="apply-form" action="#" method="post" enctype="multipart/form-data">
+    <div class="form-grid">
+      <label>
+        Full Name
+        <input type="text" name="full_name" required>
+      </label>
+
+      <label>
+        Email Address
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Phone Number
+        <input type="tel" name="phone" required>
+      </label>
+
+      <label>
+        Internship Track
+        <select name="track" required>
+          <option value="">Select track</option>
+          <option>Engineering Internship</option>
+          <option>Operations Internship</option>
+          <option>Business and Analytics Internship</option>
+        </select>
+      </label>
+    </div>
+
+    <label>
+      Resume (PDF/DOC)
+      <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+    </label>
+
+    <label>
+      Statement of Interest
+      <textarea name="message" rows="5" placeholder="Tell us about your interests, projects, and goals."></textarea>
+    </label>
+
+    <button type="submit">Submit Application</button>
+  </form>
 </section>
 </body>
 </html>
