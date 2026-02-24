@@ -37,7 +37,11 @@ body{
 }
 
 /* LEADERSHIP CARDS */
+
 .leader{
+  display:flex;
+  align-items:center;
+  gap:25px;
   background:whitesmoke;
   padding:25px;
   border-radius:10px;
@@ -56,6 +60,30 @@ body{
   border-radius:50%;
   object-fit:cover;
   margin-bottom:15px;
+}
+.lead-intro{
+  font-size:20px;
+  line-height:1.8;
+  margin-bottom:40px;
+  padding:25px;
+  border-left:4px solid #0b2c4d;
+  background-color:#eaf2fb;   /* Soft professional blue */
+  border-radius:10px;
+  transition:all 0.3s ease;
+}
+
+.lead-intro:hover{
+  transform:translateX(5px);
+  background-color:#dbeafe;   /* Slightly darker on hover */
+}
+
+.leader-info{
+  flex:1;
+}
+
+.leader-info p{
+  line-height:1.6;
+  color:#555;
 }
 
 /* LOCATION LIST */
@@ -77,8 +105,11 @@ body{
   .hero h1{
     font-size:36px;
   }
-
   .content{
     padding:50px 25px;
+  }
+  .leader{
+    flex-direction:column;
+    text-align:center;
   }
 }
