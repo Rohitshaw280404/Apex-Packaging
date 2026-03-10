@@ -98,7 +98,7 @@
         publishes first<br>
         Sustainability Report
       </h1>
-      <a href="Sustainibility Report/sustanibility_learnmore.html">Read the Report</a>
+      <a href="Sustainibility Report/sustanibility_learnmore.html" class="hero-cta hero-cta-sustainability">Read the Report</a>
     </div>
   </div>
 
@@ -107,7 +107,7 @@
     <div class="info">
       <span>COMPANY</span>
       <h2>We are now<br>Apex packaging Solution!</h2>
-      <a href="Abouts/company-learnmore.html" class="info-link">Explore Our Story</a>
+      <a href="Abouts/company-learnmore.html" class="info-link info-link-company">Explore Our Story</a>
     </div>
 
     <div class="line"></div>
@@ -115,7 +115,7 @@
     <div class="info">
       <span>BLOG</span> 
       <h2>Top retail trends<br>of 2025</h2>
-      <a href="Blog/blog-topics.html" class="info-link">Read Trend Insights</a>
+      <a href="Blog/blog-topics.html" class="info-link info-link-blog">Read Trend Insights</a>
     </div>
   </div>
 
@@ -126,36 +126,48 @@
 
 <section class="explore">
 
-  <h2>Explore our markets & innovative solutions</h2>
+  <div class="explore-intro">
+    <span class="explore-kicker">DISCOVER SOLUTIONS</span>
+    <h2>Explore our markets & innovative solutions</h2>
+    <p>Find packaging ideas by market, format, and region, then jump directly into the solutions that fit your needs.</p>
+  </div>
 
   <!-- Filters -->
   <div class="filters">
-    <select>
-      <option>All Markets</option>
-      <option>Beverage</option>
-      <option>Retail</option>
-      <option>Food</option>
-      
-      
-    </select>
+    <label class="filter-field">
+      <span>Market</span>
+      <select>
+        <option>All Markets</option>
+        <option>Beverage</option>
+        <option>Retail</option>
+        <option>Food</option>
+      </select>
+    </label>
 
-    <select>
-      <option>All Categories</option>
-      <option>Corrugated Boxes</option>
-      <option>Labels</option>
-      <option>Pouches</option>
-    </select>
+    <label class="filter-field">
+      <span>Category</span>
+      <select>
+        <option>All Categories</option>
+        <option>Corrugated Boxes</option>
+        <option>Labels</option>
+        <option>Pouches</option>
+      </select>
+    </label>
 
-    <select>
-      <option>All Countries</option>
-      <option>USA & Canada</option>
-      <option>Europe</option>
-      <option>Asia-Pacific</option>
-    </select>
+    <label class="filter-field">
+      <span>Region</span>
+      <select>
+        <option>All Countries</option>
+        <option>USA & Canada</option>
+        <option>Europe</option>
+        <option>Asia-Pacific</option>
+      </select>
+    </label>
 
     <form class="search" action="index.html" method="get">
+      <span>Search</span>
       <input type="text" name="q" placeholder="Search for something specific">
-      <button type="submit">Search</button>
+      <button type="submit">Search Now</button>
     </form>
   </div>
 
