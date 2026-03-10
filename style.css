@@ -39,6 +39,10 @@
   background:rgba(11,44,77,.85);color:#fff;
   padding:60px;display:flex;flex-direction:column;justify-content:center
 }
+.hero-panel a:hover{
+  background:#005fa3;   /* darker blue */
+  transform:translateY(-2px); /* slight lift effect */
+}
 .hero-panel h6{font-size:14px;letter-spacing:1.5px;margin-bottom:20px}
 .hero-panel h1{font-size:34px;line-height:1.25;margin-bottom:25px}
 .hero-panel a{
