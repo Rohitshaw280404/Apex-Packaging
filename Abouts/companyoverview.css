@@ -1,16 +1,11 @@
 /* ROOT VARIABLES */
 :root {
   --primary: #0b2c4d;
+  --primary-2: #0f4f82;
+  --accent: #00a3e0;
   --bg: #f8fafc;
   --text: #333;
   --card-bg: #ffffff;
-}
-
-/* DARK MODE */
-body.dark {
-  --bg: #121212;
-  --text: #e0e0e0;
-  --card-bg: #1e1e1e;
 }
 
 /* GLOBAL */
@@ -38,16 +33,14 @@ body {
   z-index: 1000;
 }
 
-/* HEADER */
-/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 25px;
-  background: #ffffff;   /* changed */
-  color: #000;           /* changed */
-  border-bottom: 1px solid #e5e7eb; /* subtle divider */
+  background: #ffffff;
+  color: #000;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 header h2 {
@@ -66,32 +59,26 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Dark mode header fix */
-body.dark header {
-  background: #1e1e1e;
+.header-cta {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--primary);
   color: #fff;
-}
-
-body.dark nav a {
-  color: #fff;
-}
-
-/* BUTTON */
-button {
-  cursor: pointer;
-  border: none;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 /* FOCUS (ACCESSIBILITY) */
 a:focus,
-button:focus {
+.header-cta:focus {
   outline: 2px dashed yellow;
   outline-offset: 3px;
 }
 
 /* HERO */
 .hero {
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
   color: #fff;
   text-align: center;
   padding: 100px 20px;
@@ -125,7 +112,7 @@ button:focus {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .card {
@@ -146,6 +133,39 @@ button:focus {
   color: var(--primary);
 }
 
+.story {
+  margin-top: 60px;
+}
+
+.story h2 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: var(--primary);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.story-grid article {
+  background: #eef5fb;
+  border-left: 5px solid var(--accent);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.story-grid h3 {
+  margin: 0 0 12px;
+  color: var(--primary);
+}
+
+.story-grid p {
+  margin: 0;
+  font-size: 16px;
+}
+
 /* STATS */
 .stats {
   display: flex;
@@ -157,6 +177,7 @@ button:focus {
 
 .stat {
   margin: 15px;
+  max-width: 240px;
 }
 
 .stat h2 {
@@ -175,16 +196,18 @@ button:focus {
   margin-bottom: 15px;
 }
 
-.cta button {
+.cta a {
+  display: inline-block;
   padding: 12px 28px;
   border-radius: 25px;
   background: var(--primary);
   color: #fff;
   font-size: 16px;
+  text-decoration: none;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.cta button:hover {
+.cta a:hover {
   background: #15406b;
   transform: scale(1.05);
 }
@@ -210,5 +233,6 @@ footer {
 
   .stats {
     flex-direction: column;
+    align-items: center;
   }
 }
