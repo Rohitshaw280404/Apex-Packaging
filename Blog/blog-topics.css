@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: #17324a;
+  background: #f5f8fb;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+  background: #fff;
+  border-bottom: 1px solid #dbe5ee;
+}
+
+.brand {
+  text-decoration: none;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0b2c4d;
+}
+
+.topbar nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.topbar nav a {
+  text-decoration: none;
+  color: #45627d;
+}
+
+.hero {
+  padding: 88px 40px;
+  color: #fff;
+  background:
+    linear-gradient(135deg, rgba(11, 44, 77, 0.94), rgba(18, 107, 162, 0.84)),
+    url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80") center/cover;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0 0 18px;
+  max-width: 780px;
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  line-height: 1.08;
+}
+
+.intro {
+  margin: 0;
+  max-width: 760px;
+  font-size: 1.06rem;
+}
+
+.content {
+  padding: 56px 40px 72px;
+}
+
+.topic-section + .topic-section {
+  margin-top: 60px;
+}
+
+.section-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+  gap: 24px;
+  align-items: stretch;
+  margin-bottom: 22px;
+}
+
+.section-head {
+  margin-bottom: 0;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  color: #0b2c4d;
+}
+
+.topic-visual {
+  min-height: 220px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 18px 36px rgba(16, 41, 64, 0.12);
+}
+
+.topic-visual.trends {
+  background-image:
+    linear-gradient(135deg, rgba(11, 44, 77, 0.3), rgba(0, 163, 224, 0.18)),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80");
+}
+
+.topic-visual.sustainability {
+  background-image:
+    linear-gradient(135deg, rgba(18, 80, 52, 0.35), rgba(41, 157, 89, 0.18)),
+    url("https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=1200&q=80");
+}
+
+.topic-visual.printing {
+  background-image:
+    linear-gradient(135deg, rgba(39, 29, 90, 0.34), rgba(29, 108, 173, 0.18)),
+    url("https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80");
+}
+
+.topic-visual.design {
+  background-image:
+    linear-gradient(135deg, rgba(94, 50, 19, 0.34), rgba(211, 129, 41, 0.16)),
+    url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80");
+}
+
+.topic-visual.case-studies {
+  background-image:
+    linear-gradient(135deg, rgba(61, 22, 22, 0.34), rgba(158, 53, 53, 0.16)),
+    url("https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80");
+}
+
+.topic-visual.materials {
+  background-image:
+    linear-gradient(135deg, rgba(50, 57, 66, 0.36), rgba(115, 132, 148, 0.16)),
+    url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80");
+}
+
+.visual-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 22px;
+  background: linear-gradient(180deg, rgba(8, 19, 31, 0.04), rgba(8, 19, 31, 0.72));
+  color: #fff;
+}
+
+.visual-overlay span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.visual-overlay strong {
+  max-width: 320px;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.topic-card {
+  background: #fff;
+  border: 1px solid #dbe5ee;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 14px 34px rgba(16, 41, 64, 0.06);
+}
+
+.topic-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #0f4f82;
+  line-height: 1.3;
+}
+
+.topic-card p {
+  margin: 0;
+}
+
+.footer {
+  padding: 22px 40px 34px;
+  text-align: center;
+  color: #5d7388;
+}
+
+@media (max-width: 768px) {
+  .topbar,
+  .hero,
+  .content,
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-layout {
+    grid-template-columns: 1fr;
+  }
+}
