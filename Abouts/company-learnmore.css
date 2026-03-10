@@ -42,8 +42,7 @@ a {
 }
 
 .hero {
-  background: linear-gradient(135deg, rgba(11, 44, 77, 0.95), rgba(0, 163, 224, 0.78)),
-    url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80") center/cover;
+  background: linear-gradient(135deg, rgba(11, 44, 77, 0.95), rgba(0, 163, 224, 0.78));
   color: #ffffff;
   padding: 96px 40px;
 }
