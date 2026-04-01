@@ -11,6 +11,7 @@
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="logo"><span>Apex-</span>Packaging</div>
+  <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
 
   <ul class="nav-links">
     <li class="dropdown">
@@ -85,6 +86,27 @@
     <button type="button" onclick="window.location.href='mailto:info@Apexrock.com'">Contact</button>
   </div>
 </nav>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (toggle && navLinks) {
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  }
+
+  const dropdowns = document.querySelectorAll('.dropdown');
+  dropdowns.forEach(dropdown => {
+    const link = dropdown.querySelector('a');
+    link.addEventListener('click', (event) => {
+      if (window.innerWidth <= 900) {
+        event.preventDefault();
+        dropdown.classList.toggle('open');
+      }
+    });
+  });
+</script>
 
 <!-- HERO -->
 <section class="hero">
